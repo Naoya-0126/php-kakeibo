@@ -74,6 +74,7 @@
                 <td class="col-2"><?= h($record['type']) == 0 ? h($record['amount']): ''; ?></td>
                 <td class="col-2"><?= h($record['type']) == 1 ? h($record['amount']): ''; ?></td>
                 <td class="col-3">
+                  <!-- 次のページに飛ぶ時にもaタグを使う→GET送信しかできない -->
                   <a href="./editForm.php?id=<?php echo h($record['id']); ?>" class="btn btn-success text-light">編集</a>
                   <a href="./delete.php?id=<?php echo h($record['id']); ?>" class="btn btn-danger text-light">削除</a>
                 </td>
