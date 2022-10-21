@@ -35,7 +35,7 @@ include_once('./dbconnect.php');
 
 
   header('Location: ./index.php');
-        exit;
+  exit;
 
 
 
